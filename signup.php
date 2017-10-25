@@ -19,11 +19,12 @@ if (isset($_POST['submit'])) {
 	$resultCheck = mysqli_num_rows($result);
 	if ($resultCheck > 0) {
 	 	header("Location: signup.php?signup=usertaken");
+
 	 	exit();
 	} else {
 		$password = md5($pass);
 		$query = "INSERT INTO users (user_first, user_last, user_email, user_username, user_pass) 	
-					values('$fname', '$lname', '$email', '$username', '$pass')";
+					values('$fname', '$lname', '$email', '$username', '$password')";
 		$insert = $db->create($query);
 	}
 

@@ -14,8 +14,8 @@
 				<li><a href="index.php">HOME</a></li>
 			</ul>
 			<div class="nav-login">
-				<form action="">
-					<input type="text" name="user_username" placeholder="Username/e-mail" />
+				<form action="index.php" method="POST">
+					<input type="text" name="u_uid" placeholder="Username/e-mail" />
 					<input type="password" name="user_pass" placeholder="Password" />
 					<button type="submit" name="submit">Login</button>
 				</form>
@@ -24,3 +24,4 @@
 		</div>		
 	</nav>
 </header>
+
