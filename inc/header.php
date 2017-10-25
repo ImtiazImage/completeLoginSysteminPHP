@@ -1,3 +1,6 @@
+<?php
+session_start();
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -11,7 +14,7 @@
 	<nav>
 		<div class="main-wrapper">
 			<ul>
-				<li><a href="index.php">HOME</a></li>
+				<li><a href="loginpro.php">HOME</a></li>
 			</ul>
 			<div class="nav-login">
 				<form action="index.php" method="POST">
